@@ -1,0 +1,61 @@
+namespace Exercises.klasi
+
+public class Human
+    {
+	
+	// PROPERTIES
+        public string FirstName { get; set; }
+		public string LastName { get; set; }
+		public int Age { get; set; }
+
+		public string GetPersonStats()
+        {
+            return FirstName + " " + LastName + " " + Age;
+        }
+
+	// CONSTRUCTOR
+		public Human(string firstName, string lastName, int age)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+
+        }
+		
+	// METHODS
+        public void PrintPerson()
+        {
+            Console.WriteLine($"Name:{Name}, Age:{Age}, SSN:{SSN}");
+}
+		
+	}
+	---------------------------------------------------------------------------------------
+	using Exercises.klasi;
+	// go dodavame ova gore za da koristime klasi od drug folder
+	
+	class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Human Teodor = new Human(Console.ReadLine(),Console.ReadLine(), int.Parse(Console.ReadLine()));
+            Console.WriteLine(Teodor.GetPersonStats());
+            Console.ReadLine();
+
+        }
+    }
+	
+	
+Methods --- virtual / override
+
+// Constructor of cat that selects which constructor it will call first from parent with the base () 
+        // This will call the constructor that takes a string from Animal, and then the Cat() constructor
+        // This will not execute the default constructor in Animal
+        public Cat() : base("Cat")
+        {
+            Console.WriteLine("A new instance of cat is created by the parent constructor that requires a stirng!");
+}
+
+
+Without constructor : Animal dambo = new Animal() { Name = "Dambo", Id = 5, Type = "Elephant" };
+WIth constructor : Animal dambo = new Animal() { "Dambo",5, "Elephant" };

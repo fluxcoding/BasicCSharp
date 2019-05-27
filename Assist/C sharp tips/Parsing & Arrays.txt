@@ -1,0 +1,68 @@
+Console.WriteLine(number.GetType()); // We gt the type with the method GetType()
+for (int i = ex1input2; i != 0; i--);
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Parsing
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+string numberString = "2";
+			string doubleString = "2.5";
+			// converting with Parse
+			int parseInt = int.Parse(numberString);
+			
+			// converting with Convert				
+			int convertInt = Convert.ToInt32(numberString);
+			
+			// tryParse 
+			int ifParsedValue; // if try parse succseeds we will put the converted value here
+							   // We create a boolean variable that will keep info if
+							   
+			bool parsingSuccsess = int.TryParse(numberString, out ifParsedValue);
+								// We create a boolean variable that will keep info if  the parsing was done or not
+			
+			Console.WriteLine(parsingSuccsess); // true
+            Console.WriteLine(ifParsedValue);  //  2 
+			
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Array
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+int [] declaringArray = new int[4];	
+
+int[] shorterWayArray = { 14, 5, -10 };
+
+double[] doubleArray = new double[] { 2.4, 11, 12, 634, 0.99 };
+
+
+REVERSE
+Array.Reverse(doubleArray);  // pravi reverse na orginalnata array
+
+INDEXOF
+-Finding ITEM in an array
+			int indexFound = Array.IndexOf(doubleArray, 12);
+			// Vrakja 2 (indeksot)
+			// Ako nema takov item vrakja -1
+
+RESIZE
+
+Array.Resize(ref fullNames, fullNames.Length + 1);
+
+-Change an array number of items
+			Array.Resize(ref doubleArray, 6);
+			doubleArray[5] = 105.6;
+Console.WriteLine(doubleArray[5]);     // Vrakja 105.6;
+
+Double Array :
+ int[][] arraysOfInts = new int[][] {
+                new int[] {2, 4},
+                new int[] {-6, 12},
+            };
+
+
+
+
+
+
+
+
+
+
+

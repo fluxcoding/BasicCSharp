@@ -1,0 +1,24 @@
+rd .git /S/Q
+// to clean git before
+
+git init
+git add .
+git commit -m "Description for the commit"
+git remote add origin respositoryURL
+git push -u origin master
+
+
+git clone https://github.com/fluxcoding/ClassCode.git]
+
+git add . in the console and hit enter
+git commit -m"My commit message"
+git push
+
+
+
+
+Git Ignore
+
+tortoise git
+
+git clone https://github.com/fluxcoding/ClassStuff.git;

@@ -1,0 +1,14 @@
+Dates
+Building a string
+
+DateTime aDate = new DateTime(); // Creating a new empty date
+DateTime aCustomDate = new DateTime(1992, 10, 15); // Creating a custom date
+DateTime currentDay = DateTime.Today; // Getting todays date without time
+DateTime currentDateTime = DateTime.Now; // Getting todays date with time
+
+Converting and formating a string
+
+string dateFormat1 = DateTime.Now.ToString("MM/dd/yyyy"); // Formating date to string
+string dateFormat2 = DateTime.Now.ToString("dddd, dd MMMM yyyy"); // Formating date to string
+string stringDate = "12-15-2012"; 
+DateTime convertedDate = DateTime.Parse(stringDate); // Converting string to date
